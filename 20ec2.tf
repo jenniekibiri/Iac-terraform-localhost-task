@@ -1,23 +1,4 @@
-//ec2 instances for the web servers
-data "aws_ami" "latest-amazon-linux-image" {
-  most_recent = true
-  owners      = ["amazon"]
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
-  }
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-}
-output "aws_ami_id" {
-  value = data.aws_ami.latest-amazon-linux-image.id
-}
-resource "aws_key_pair" "ssh-key" {
-  key_name   = "server-key"
-  public_key = file(var.public_key_location)
-}
+
 
 resource "aws_instance" "web-server" {
   count = 20
