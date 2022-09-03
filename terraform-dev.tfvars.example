@@ -1,0 +1,19 @@
+
+vpc_cidr_block = "10.0.0.0/16"
+
+my_ip                  = "197.232.61.219/32"
+avail_zone1            = "us-east-1a"
+avail_zone2            = "us-east-1b"
+web_subnet1_cidr_block = "10.0.1.0/24"
+web_subnet2_cidr_block = "10.0.2.0/24"
+app_subnet1_cidr_block = "10.0.3.0/24"
+app_subnet2_cidr_block = "10.0.4.0/24"
+db_subnet1_cidr_block  = "10.0.5.0/24"
+db_subnet2_cidr_block  = "10.0.6.0/24"
+instance_type          = "t2.micro"
+public_key_location    = "~/.ssh/id_rsa.pub"
+env_prefix             = "dev"
+jenkins_server         = "146.190.231.67/32"
+db_username            = "root"
+db_password            = "rootpassword"
+
