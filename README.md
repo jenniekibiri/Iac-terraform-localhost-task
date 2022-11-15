@@ -11,3 +11,10 @@
  terraform apply -var-file terraform-dev.tfvars -auto-approve
 
  ```
+ Task: 
+ 1. provision infrastructure for a single instances 
+ 2. provision infrastructure for 20instances
+ 
+ 
+
+ 
